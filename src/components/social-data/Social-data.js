@@ -1,16 +1,17 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import s from './social-data.module.css'
 
 const SocialData=({title,stats})=>{
-    return <section class="statistics">
-     {title && <h2 class="title">{title}</h2>}
+    return <section className={s.statistics}>
+     {title && <h2 className={s.title}>{title}</h2>}
     
   
-    <ul class="stat-list">
+    <ul className={s.stats}>
         {stats.map((stat)=>(
-            <li class="item" key={stat.id}>
-            <span class="label">{stat.label}</span>
-            <span class="percentage">{stat.percentage}%</span>
+            <li className={s.item} key={stat.id}>
+            <span className={s.label}>{stat.label}</span>
+            <span className={s.label}>{stat.percentage}%</span>
           </li>
         ))}
       

@@ -1,34 +1,37 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import style from './profile.module.css'
+
+
 
 
 
 
 const Profile=({avatar, name, tag, location,stats})=>(
-  <div class="profile">
-  <div class="description">
+  <div className={style.card}>
+  <div >
     <img
       src={avatar}
       alt="Аватар пользователя"
-      class="avatar"
+      className={style.avatar}
     />
-    <p class="name">{name}</p>
-    <p class="tag">{tag}</p>
-    <p class="location">{location}</p>
+    <p className={style.br}>{name}</p>
+    <p className={style.center}>{tag}</p>
+    <p className={style.center}>{location}</p>
   </div>
 
-  <ul class="stats">
-    <li>
-      <span class="label">Followers</span>
-      <span class="quantity">{stats.followers}</span>
+  <ul className={style.stats}>
+    <li className={style.li}>
+      <span className={style.label}>Followers</span>
+      <span className={style.quantity}>{stats.followers}</span>
     </li>
-    <li>
-      <span class="label">Views</span>
-      <span class="quantity">{stats.views}</span>
+    <li className={style.li}>
+      <span className={style.label}>Views</span>
+      <span className={style.quantity}>{stats.views}</span>
     </li>
-    <li>
-      <span class="label">Likes</span>
-      <span class="quantity">{stats.likes}</span>
+    <li className={style.li}>
+      <span className={style.label}>Likes</span>
+      <span className={style.quantity}>{stats.likes}</span>
     </li>
   </ul>
 </div>

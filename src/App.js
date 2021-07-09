@@ -7,7 +7,7 @@ import FriendsList from './components/friends/friendsList'
 import friendJson from './components/friends/friends.json'
 import TransactionHistory from './components/transactionHistory/TransactionHistory'
 import transJson from './components/transactionHistory/transactionHistory.json'
-console.log(transJson)
+
 
 
 function App() {

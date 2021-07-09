@@ -1,0 +1,26 @@
+.stats{
+    display: flex;
+    list-style: none;
+   
+}
+.item{
+
+    display:block;
+  width: 100px;
+  height: 40px;
+  margin: 4px;
+  border: 2px solid rgb(48, 33, 33);
+
+
+}
+.statistics{
+    background-color: darksalmon;
+}
+.title{
+    text-align: center;
+}
+.label{
+    display: block;
+    text-align: center;
+  
+}

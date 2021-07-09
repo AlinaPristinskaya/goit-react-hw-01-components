@@ -1,0 +1,19 @@
+.span{
+    display: inline;
+}
+.name{
+ 
+    color: black;
+    font-size: 16px;
+    
+    font-weight: 700;
+    line-height: 16px;
+    
+    text-align: right;
+    
+}
+.img{
+    width: 100px;
+    width: 100px;
+    border: 2px solid #aaa
+}
